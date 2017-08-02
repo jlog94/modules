@@ -33,6 +33,6 @@
         'demo/demo.xml',
     ],
     'intallable':False,
-    'auto-install':True,
+    'auto_install':True,
 
 }
