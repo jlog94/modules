@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Open Academy",
+    'name': "Prueba de Odoo",
 
-    'summary': """Manage trainings""",
+    'summary': """Version estable""",
 
     'description': """
-		Favor de atenderlos
+		Esto es  lo aprendido en el curso
     """,
 
     'author': "Soluciones 4G",
@@ -14,8 +14,8 @@
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
     # for the full list
-    'category': 'PRO',
-    'version': '0.1.1r',
+    'category': 'Inventario',
+    'version': '0.1r',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
