@@ -3,21 +3,21 @@
     'name': "Open Academy",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
-
-    'description': """
-        Long description of module's purpose
+       Prueba de OpenAcademy	
     """,
 
-    'author': "Jose Luis Ortiz Gomez",
+    'description': """
+        Basado en el curso de Vauxoo
+    """,
+
+    'author': "Soluciones 4G",
     'website': "http://www.soluciones4g.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
     # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
+    'category': 'PRO',
+    'version': '0.1.1r',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
@@ -32,4 +32,7 @@
     'demo': [
         'demo/demo.xml',
     ],
+    'intallable':False,
+    'auto-install':True,
+
 }
