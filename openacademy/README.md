@@ -1,2 +1,2 @@
-#Creación del Modulo Open Academy
-Contiene mejoras
+# Creación de Open Acadeny
+Creación de Módulo basado en Vauxoo
