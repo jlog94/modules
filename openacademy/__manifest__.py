@@ -22,13 +22,14 @@
 
     # always loaded
     'data': [
+        'views/view_curso.xml'
         # 'security/ir.model.access.csv',
         #'views/views.xml',
         # 'views/templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/openacademy_demo_curso.xml',
+        'demo_curso.xml',
     ],
     'intallable': True,
     'auto_install': False,
