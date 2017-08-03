@@ -18,7 +18,7 @@
         <!-- window action -->
         <record model="ir.actions.act_window" id="course_list_action">
             <field name="name">Courses</field>
-            <field name="res_model">openacademy.course</field>
+            <field name="res_model">openacademy.curso</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
@@ -36,6 +36,6 @@
         <menuitem id="courses_menu" name="Courses" parent="openacademy_menu" action="course_list_action"/>
         <!-- Full id location: action="openacademy.course_list_action"
              It is not required when it is the same module -->
-             
+
     </data>
 </odoo>    
