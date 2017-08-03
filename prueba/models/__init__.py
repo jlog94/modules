@@ -1,1 +1,1 @@
-from . import openacademy_curso
+from . import prueba_curso
