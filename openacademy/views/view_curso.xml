@@ -20,9 +20,19 @@
                 </form>
             </field>
         </record>
-
+        <!--Muestra la busqueda de la descripcion con todas sus lineas-->
+        <record model="ir.ui.view" id="course_tree_view">
+            <field name="name">course.form</field>
+            <field name="model">openacademy.curso</field>
+            <field name="arch" type="xml">
+                <tree string="Curso">
+                    <field name="name"/>
+                    <field name="Description"/>
+                </tree>
+            </field>
+        </record>
         <record model="ir.ui.view" id="course_search_view">
-            <field name="name">curso.search</field>
+            <field name="name">course.search</field>
             <field name="model">openacademy.curso</field>
             <field name="arch" type="xml">
                 <search>
