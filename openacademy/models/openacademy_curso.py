@@ -1,9 +1,10 @@
+# -*- coding: utf-8 -*-
 from odoo import models, fields
 
 
 class Curso (models.Model):
-    _name = 'openacademy.curso' #Model odoo name
+    _name = 'openacademy.curso'  # Model odoo name
 
-    name = fields.Char(string='Title',required=True) #Field reserved to identified name re
+    # Field reserved to identified name re
+    name = fields.Char(string='Title', required=True)
     description = fields.Text(string='Description')
-
