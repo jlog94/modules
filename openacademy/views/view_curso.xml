@@ -9,12 +9,21 @@
                     <sheet>
                         <group>
                             <field name="name"/>
+                            <field name="responsible_id"/>
                         </group>
                         <notebook>
                             <page string="Description">
                                 <field name="description"/>
                             </page>
-                            <page string="About">                                This is an example of notebooks                            </page>
+                            <page string="About">This is an example of notebooks</page>
+                            <page string="Sessions">
+                                <field name="session_ids">
+                                    <tree string="Registered sessions" editable="botton">
+                                        <field name="name"/>
+                                        <field name="instructor_id"/>
+                                    </tree>
+                                </field>
+                            </page>
                         </notebook>
                     </sheet>
                 </form>
@@ -22,12 +31,12 @@
         </record>
         <!--Muestra la busqueda de la descripcion con todas sus lineas-->
         <record model="ir.ui.view" id="course_tree_view">
-            <field name="name">course.form</field>
+            <field name="name">course.tree</field>
             <field name="model">openacademy.curso</field>
             <field name="arch" type="xml">
                 <tree string="Course">
                     <field name="name"/>
-                    <field name="description"/>
+                    <field name="responsible_id"/>
                 </tree>
             </field>
         </record>

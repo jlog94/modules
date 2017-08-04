@@ -22,7 +22,7 @@
 
     # always loaded
     'data': [
-        'views/view_curso.xml'
+        'views/view_curso.xml',
         'views/view_session.xml'
         # 'security/ir.model.access.csv',
         #'views/views.xml',
