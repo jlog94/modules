@@ -25,9 +25,9 @@
             <field name="name">course.form</field>
             <field name="model">openacademy.curso</field>
             <field name="arch" type="xml">
-                <tree string="Curso">
+                <tree string="Course">
                     <field name="name"/>
-                    <field name="Description"/>
+                    <field name="description"/>
                 </tree>
             </field>
         </record>
