@@ -23,7 +23,8 @@
     # always loaded
     'data': [
         'views/view_curso.xml',
-        'views/view_session.xml'
+        'views/view_session.xml',
+        'views/view_partner.xml',
         # 'security/ir.model.access.csv',
         #'views/views.xml',
         # 'views/templates.xml',
