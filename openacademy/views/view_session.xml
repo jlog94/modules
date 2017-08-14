@@ -18,6 +18,7 @@
                             <group string="Schedule">
                                 <field name="start_date"/>
                                 <field name="duration"/>
+                                <field name="end_date"/>
                                 <field name="seats"/>
                             </group>
                         </group>
@@ -39,7 +40,7 @@
                 </tree>
             </field>
         </record>
-        
+
         <!-- calendar view -->
         <record model="ir.ui.view" id="session_calendar_view">
             <field name="name">session.calendar</field>
@@ -50,7 +51,6 @@
                 </calendar>
             </field>
         </record>
-
 
         <record model="ir.actions.act_window" id="session_list_action">
             <field name="name">Sessions</field>

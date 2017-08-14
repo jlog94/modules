@@ -21,10 +21,8 @@ class Session(models.Model):
     attendee_ids = fields.Many2many('res.partner', string="Attendees")
     taken_seats = fields.Float(string="Taken seats", compute='_taken_seats')
     end_date = fields.Date(string="End Date", store=True,
-        compute='_get_end_date', inverse='_set_end_date')
+                           compute='_get_end_date', inverse='_set_end_date')
     active = fields.Boolean(default="True")
-
-
 
     @api.one
     @api.depends('seats', 'attendee_ids')
@@ -51,13 +49,15 @@ class Session(models.Model):
                 },
             }
 
+    @api.one
     @api.constrains('instructor_id', 'attendee_ids')
     def _check_instructor_not_in_attendees(self):
         for r in self:
             if r.instructor_id and r.instructor_id in r.attendee_ids:
                 raise exceptions.ValidationError(
                     "A session's instructor can't be an attendee")
-    
+
+    @api.one
     @api.depends('start_date', 'duration')
     def _get_end_date(self):
         for r in self:
@@ -71,6 +71,7 @@ class Session(models.Model):
             duration = timedelta(days=r.duration, seconds=-1)
             r.end_date = start + duration
 
+    @api.one
     def _set_end_date(self):
         for r in self:
             if not (r.start_date and r.end_date):
