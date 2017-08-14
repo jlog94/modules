@@ -24,6 +24,8 @@ class Session(models.Model):
                            compute='_get_end_date', inverse='_set_end_date')
     hours = fields.Float(string="Duration in hours",
                          compute='_get_hours', inverse='_set_hours')
+    attendees_count = fields.Integer(
+        string="Attendees count", compute='_get_attendees_count', store=True)
     active = fields.Boolean(default="True")
 
     @api.one
@@ -50,14 +52,6 @@ class Session(models.Model):
                     'message': "Increase seats or remove excess attendees",
                 },
             }
-
-    @api.one
-    @api.constrains('instructor_id', 'attendee_ids')
-    def _check_instructor_not_in_attendees(self):
-        for r in self:
-            if r.instructor_id and r.instructor_id in r.attendee_ids:
-                raise exceptions.ValidationError(
-                    "A session's instructor can't be an attendee")
 
     @api.one
     @api.depends('start_date', 'duration')
@@ -95,3 +89,17 @@ class Session(models.Model):
     def _set_hours(self):
         for r in self:
             r.duration = r.hours / 24
+
+    @api.one
+    @api.depends('attendee_ids')
+    def _get_attendees_count(self):
+        for r in self:
+            r.attendees_count = len(r.attendee_ids)
+
+    @api.one
+    @api.constrains('instructor_id', 'attendee_ids')
+    def _check_instructor_not_in_attendees(self):
+        for r in self:
+            if r.instructor_id and r.instructor_id in r.attendee_ids:
+                raise exceptions.ValidationError(
+                    "A session's instructor can't be an attendee")
