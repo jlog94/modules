@@ -6,6 +6,13 @@
             <field name="model">openacademy.session</field>
             <field name="arch" type="xml">
                 <form string="Session Form">
+                    <header>
+                    <!--se cambian los nombres de los button a igual que el tipo-->
+                        <button name="button_draft" type="workflow" string="Reset to draft" states="confirmed,done"/>
+                        <button name="button_confirm" type="workflow" string="Confirm" states="draft" class="oe_highlight"/>
+                        <button name="button_done" type="workflow" string="Mark as done" states="confirmed" class="oe_highlight"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
                     <sheet>
                         <group>
                             <group string="General">
@@ -95,11 +102,11 @@
                                     <div class="oe_clear"></div>
                                 </div>
                                 <div t-attf-class="oe_kanban_content">
-                                    <!-- title -->                                    Session name:                                    
+                                    <!-- title -->                                    Session name:                                                                                                            
                                     <field name="name"/>
-                                    <br/>                                    Start date:                                    
+                                    <br/>                                    Start date:                                                                                                            
                                     <field name="start_date"/>
-                                    <br/>                                    duration:                                    
+                                    <br/>                                    duration:                                                                                                            
                                     <field name="duration"/>
                                 </div>
                             </div>

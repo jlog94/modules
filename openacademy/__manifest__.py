@@ -25,9 +25,7 @@
         'views/view_curso.xml',
         'views/view_session.xml',
         'views/view_partner.xml',
-        # 'security/ir.model.access.csv',
-        #'views/views.xml',
-        # 'views/templates.xml',
+        'workflow/session_workflow.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
