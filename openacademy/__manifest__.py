@@ -27,6 +27,7 @@
         'views/view_curso.xml',
         'views/view_session.xml',
         'views/view_partner.xml',
+        'views/view_wizard.xml',
         'workflow/session_workflow.xml',
     ],
     # only loaded in demonstration mode
