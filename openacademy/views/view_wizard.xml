@@ -12,9 +12,8 @@
                     </group>
                     <!--Se agrega botones a la parte del pie del attendee-->
                     <footer>
-                        <button name="subscribe" type="object" string="Subscribe" class="oe_highlight"/> or                                            
-                        <button special="cancel" string="Cancel"/>
-                        <hr>Hola puedes agregar o cancelar</hr>                
+                        <button name="subscribe" type="object" string="Register" class="oe_highlight"/> or                                            
+                        <button special="cancel" string="Cancel"/>              
                         </footer>
                     </form>
                 </field>

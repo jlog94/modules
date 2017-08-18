@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import models, fields, api
+from odoo import models, fields, api, _
 
 
 class Curso (models.Model):
@@ -18,9 +18,9 @@ class Curso (models.Model):
         copied_count = self.search_count(
             [('name', '=like', u"Copy of {}%".format(self.name))])
         if not copied_count:
-            new_name = u"Copy of {}".format(self.name)
+            new_name = _(u"Copy of {}").format(self.name)
         else:
-            new_name = u"Copy of {} ({})".format(self.name, copied_count)
+            new_name = _(u"Copy of {} ({})").format(self.name, copied_count)
 
         default['name'] = new_name
         return super(Curso, self).copy(default)
@@ -28,9 +28,9 @@ class Curso (models.Model):
     _sql_constraints = [
         ('name_description_check',
          'CHECK(name != description)',
-         "El titulo del curso no debe ser igual a la descripcion"),
+         _("El titulo del curso no debe ser igual a la descripcion")),
 
         ('name_unique',
          'UNIQUE(name)',
-         "El nombre del curso debe ser unico"),
+         _("El nombre del curso debe ser unico")),
     ]
