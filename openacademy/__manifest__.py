@@ -15,10 +15,10 @@
     # Check https://github.com/odoo/odoo/blob/master/odoo/addons/base/module/module_data.xml
     # for the full list
     'category': 'Test',
-    'version': '0.1r',
+    'version': '1r',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base','board'],
 
     # always loaded
     'data': [
@@ -30,6 +30,7 @@
         'views/view_wizard.xml',
         'workflow/session_workflow.xml',
         'report/session_report.xml',
+        'views/view_board.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
