@@ -112,14 +112,14 @@ msgid "Create the first course"
 msgstr ""
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_create_uid
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_create_uid
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session_create_uid
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_create_uid
 msgid "Created by"
 msgstr ""
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_create_date
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_create_date
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session_create_date
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_create_date
 msgid "Created on"
@@ -131,13 +131,13 @@ msgid "Delete"
 msgstr ""
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_description
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_description
 #: model:ir.ui.view,arch_db:openacademy.course_form_view
 msgid "Description"
 msgstr ""
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_display_name
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_display_name
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session_display_name
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_display_name
 msgid "Display Name"
@@ -199,7 +199,7 @@ msgid "Hola puedes agregar o cancelar"
 msgstr ""
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_id
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_id
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session_id
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_id
 msgid "ID"
@@ -213,21 +213,21 @@ msgid "Instructor"
 msgstr ""
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso___last_update
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course___last_update
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session___last_update
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard___last_update
 msgid "Last Modified on"
 msgstr ""
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_write_uid
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_write_uid
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session_write_uid
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_write_uid
 msgid "Last Updated by"
 msgstr ""
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_write_date
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_write_date
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session_write_date
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_write_date
 msgid "Last Updated on"
@@ -285,7 +285,7 @@ msgid "Reset to draft"
 msgstr ""
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_responsible_id
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_responsible_id
 #: model:ir.ui.view,arch_db:openacademy.course_search_view
 msgid "Responsible"
 msgstr ""
@@ -322,7 +322,7 @@ msgstr ""
 
 #. module: openacademy
 #: model:ir.actions.act_window,name:openacademy.session_list_action
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_session_ids
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_session_ids
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_session_ids
 #: model:ir.ui.menu,name:openacademy.session_menu
 #: model:ir.ui.view,arch_db:openacademy.course_form_view
@@ -371,12 +371,12 @@ msgid "This is an example of notebooks"
 msgstr ""
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_name
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_name
 msgid "Title"
 msgstr ""
 
 #. module: openacademy
-#: model:ir.model,name:openacademy.model_openacademy_curso
+#: model:ir.model,name:openacademy.model_openacademy_course
 msgid "openacademy.curso"
 msgstr ""
 

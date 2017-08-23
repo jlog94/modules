@@ -96,13 +96,13 @@ msgid "Contacts"
 msgstr "Contactos"
 
 #. module: openacademy
-#: code:addons/openacademy/models/openacademy_curso.py:21
+#: code:addons/openacademy/models/openacademy_course.py:21
 #, python-format
 msgid "Copy of {}"
 msgstr "Copia de {}"
 
 #. module: openacademy
-#: code:addons/openacademy/models/openacademy_curso.py:23
+#: code:addons/openacademy/models/openacademy_course.py:23
 #, python-format
 msgid "Copy of {} ({})"
 msgstr "Copia de {} ({})"
@@ -130,14 +130,14 @@ msgid "Create the first course"
 msgstr "Crear el primer curso"
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_create_uid
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_create_uid
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session_create_uid
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_create_uid
 msgid "Created by"
 msgstr "Creado por"
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_create_date
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_create_date
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session_create_date
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_create_date
 msgid "Created on"
@@ -149,13 +149,13 @@ msgid "Delete"
 msgstr "Eliminar"
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_description
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_description
 #: model:ir.ui.view,arch_db:openacademy.course_form_view
 msgid "Description"
 msgstr "Descripción"
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_display_name
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_display_name
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session_display_name
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_display_name
 msgid "Display Name"
@@ -187,14 +187,14 @@ msgid "Duration in hours"
 msgstr "Duración en horas"
 
 #. module: openacademy
-#: code:addons/openacademy/models/openacademy_curso.py:35
+#: code:addons/openacademy/models/openacademy_course.py:35
 #: sql_constraint:openacademy.curso:0
 #, python-format
 msgid "Course name must be unique"
 msgstr "El nombre del curso debe ser único"
 
 #. module: openacademy
-#: code:addons/openacademy/models/openacademy_curso.py:31
+#: code:addons/openacademy/models/openacademy_course.py:31
 #: sql_constraint:openacademy.curso:0
 #, python-format
 msgid "The course title should not be the same as the description"
@@ -216,7 +216,7 @@ msgid "Group By"
 msgstr "Agrupar por"
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_id
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_id
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session_id
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_id
 msgid "ID"
@@ -242,21 +242,21 @@ msgid "Instructor"
 msgstr "Instructor"
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso___last_update
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course___last_update
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session___last_update
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard___last_update
 msgid "Last Modified on"
 msgstr "Última modificación el"
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_write_uid
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_write_uid
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session_write_uid
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_write_uid
 msgid "Last Updated by"
 msgstr "Última actualización por"
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_write_date
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_write_date
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_session_write_date
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_write_date
 msgid "Last Updated on"
@@ -319,7 +319,7 @@ msgid "Reset to draft"
 msgstr "Regresar a borrador"
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_responsible_id
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_responsible_id
 #: model:ir.ui.view,arch_db:openacademy.course_search_view
 msgid "Responsible"
 msgstr "Responsable"
@@ -356,7 +356,7 @@ msgstr "Nombre de sesión:"
 
 #. module: openacademy
 #: model:ir.actions.act_window,name:openacademy.session_list_action
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_session_ids
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_session_ids
 #: model:ir.model.fields,field_description:openacademy.field_openacademy_wizard_session_ids
 #: model:ir.ui.menu,name:openacademy.session_menu
 #: model:ir.ui.view,arch_db:openacademy.course_form_view
@@ -406,7 +406,7 @@ msgid "This is an example of notebooks"
 msgstr "Este es un ejemplo del libro"
 
 #. module: openacademy
-#: model:ir.model.fields,field_description:openacademy.field_openacademy_curso_name
+#: model:ir.model.fields,field_description:openacademy.field_openacademy_course_name
 msgid "Title"
 msgstr "Título"
 
@@ -417,7 +417,7 @@ msgid "Too many attendees"
 msgstr "Demasiados asistentes"
 
 #. module: openacademy
-#: model:ir.model,name:openacademy.model_openacademy_curso
+#: model:ir.model,name:openacademy.model_openacademy_course
 msgid "openacademy.curso"
 msgstr "openacademy.curso"
 

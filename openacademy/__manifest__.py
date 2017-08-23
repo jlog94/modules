@@ -5,7 +5,7 @@
     'summary': """Prueba del Curso""",
 
     'description': """
-        Practicando con Odoo
+        Practicando con Odoo y creando un modulo Open Academy
     """,
 
     'author': "soluciones4g",
@@ -29,7 +29,7 @@
         'views/view_partner.xml',
         'views/view_wizard.xml',
         'workflow/session_workflow.xml',
-        'report/openacademy_report.xml',
+        'report/session_report.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
