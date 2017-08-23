@@ -28,9 +28,9 @@ class Course (models.Model):
     _sql_constraints = [
         ('name_description_check',
          'CHECK(name != description)',
-         _("El titulo del curso no debe ser igual a la descripcion")),
+         _("The course title should not be the same as the description")),
 
         ('name_unique',
          'UNIQUE(name)',
-         _("El nombre del curso debe ser unico")),
+         _("Course name must be unique")),
     ]
